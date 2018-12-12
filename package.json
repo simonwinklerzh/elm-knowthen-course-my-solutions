@@ -1,0 +1,14 @@
+{
+  "name": "elm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "chokidar '**/*.elm' -c 'elm make Main.elm --output elm.compiled.js' --initial"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.1"
+  }
+}
