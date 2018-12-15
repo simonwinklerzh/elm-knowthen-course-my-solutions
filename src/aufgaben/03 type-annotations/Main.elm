@@ -1,5 +1,6 @@
 module Main exposing (main)
 
+import Debug
 import Html
 
 
@@ -64,4 +65,12 @@ printDiscount cartList =
 
 
 main =
-    Html.text (String.join " | " (printDiscount newCart))
+    let
+        logCart =
+            Debug.log "logCart:" cart
+
+        logNewCart =
+            Debug.log "newCart:" newCart
+    in
+    Html.text
+        (String.join " | " (printDiscount newCart))
