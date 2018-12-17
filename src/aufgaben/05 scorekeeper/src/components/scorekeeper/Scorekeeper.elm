@@ -189,7 +189,7 @@ player_list model =
 points_total : Model -> Html.Html Msg
 points_total model =
     let
-        total = List.map .points model.plays
+        total = List.map .points model.players
             |> List.sum
     in
         Html.footer
